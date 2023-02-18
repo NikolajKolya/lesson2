@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/PerimeterApp/.vs/PerimeterApp
+/PerimeterApp/PerimeterApp/bin/Debug/net6.0/PerimeterApp.deps.json
+/PerimeterApp/PerimeterApp/bin/Debug/net6.0
+/PerimeterApp/PerimeterApp/obj/Debug/net6.0/ref/PerimeterApp.dll
+/PerimeterApp/PerimeterApp/obj
