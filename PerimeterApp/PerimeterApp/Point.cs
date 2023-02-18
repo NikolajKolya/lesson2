@@ -34,10 +34,20 @@
 
         public static double EnterXY(string XY)
         {
-            Console.WriteLine($"Введите {XY} координату:");
-            var xyString = Console.ReadLine();
-            var xy = double.Parse(xyString);
-            return xy;
+            double xy = 0;
+            while (true)
+            {
+                Console.WriteLine($"Введите {XY} координату:");
+                var xyString = Console.ReadLine();
+                bool isSuccess = double.TryParse(xyString, out xy);
+
+                if(isSuccess)
+                {
+                    return xy;
+                }
+
+                Console.WriteLine("Вы ввели не число!");
+            }
         }
     }
 }
