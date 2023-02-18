@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace PerimeterApp
+﻿namespace PerimeterApp
 {
     public class Triangle
     {
@@ -20,7 +14,7 @@ namespace PerimeterApp
             BC = bC;
             CA = cA;
         }
-        public double Perimeter()
+        public double CalculatePerimeter()
         {
             return AB.CalculateDistance() + BC.CalculateDistance() + CA.CalculateDistance();
         }

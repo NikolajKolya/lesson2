@@ -18,26 +18,26 @@
         /// <summary>
         /// Конструктор
         /// </summary>
-        private Point(double x, double y)
+        public Point(double x, double y)
         {
             X = x;
             Y = y;
         }
 
         /// <summary>
-        /// Ввод точки с клавиатуры
+        /// Методо - Ввод точки с клавиатуры
         /// </summary>
         public static Point EnterPoint()
         {
-            Console.WriteLine("Введите X координату:");
-            var xString = Console.ReadLine();
-            var x = double.Parse(xString);
+            return new Point(EnterXY("x"), EnterXY("y"));
+        }
 
-            Console.WriteLine("Введите Y координату:");
-            var yString = Console.ReadLine();
-            var y = double.Parse(yString);
-
-            return new Point(x, y);
+        public static double EnterXY(string XY)
+        {
+            Console.WriteLine($"Введите {XY} координату:");
+            var xyString = Console.ReadLine();
+            var xy = double.Parse(xyString);
+            return xy;
         }
     }
 }

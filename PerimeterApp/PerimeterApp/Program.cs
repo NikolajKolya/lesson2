@@ -19,7 +19,7 @@ namespace PerimeterApp
 
             Triangle ABC = new Triangle(AB, BC, CA);
 
-            Console.WriteLine($"Периметар = {ABC.Perimeter()}");
+            Console.WriteLine($"Периметар = {ABC.CalculatePerimeter()}");
 
 
 
