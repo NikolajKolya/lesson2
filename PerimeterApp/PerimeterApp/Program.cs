@@ -18,8 +18,10 @@ namespace PerimeterApp
             Line CA = new Line(c, a);
 
             Triangle ABC = new Triangle(AB, BC, CA);
+            square abc = new square(AB.CalculateDistance(), BC.CalculateDistance(), CA.CalculateDistance());
 
             Console.WriteLine($"Периметар = {ABC.CalculatePerimeter()}");
+            Console.WriteLine($"Площадь = {abc.CalculateSquare()}");
 
 
 
